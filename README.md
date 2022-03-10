@@ -2,6 +2,4 @@
 This project is 3D moblie game
 
 
-#### 미니게임
-
-1. 자동차
+### 3D 쿼터뷰 모바일 게임
