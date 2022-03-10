@@ -1,0 +1,485 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'ko' Physical Memory: 24513 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/GitHub/3d-moblie-game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+11651
+Successfully changed project path to: D:/GitHub/3d-moblie-game
+D:/GitHub/3d-moblie-game
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 26.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/3d-moblie-game/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   
+    VRAM:     2988 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009210 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 26.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.682 seconds
+Domain Reload Profiling:
+	ReloadAssembly (682ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (491ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (135ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (137ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (26ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (68ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003130 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.057 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1058ms)
+		BeginReloadAssembly (172ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (820ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (281ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (290ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1502 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.6 MB.
+System memory in use after: 67.7 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1937.
+Total: 2.535400 ms (FindLiveObjects: 0.110300 ms CreateObjectMapping: 0.041200 ms MarkObjects: 2.312800 ms  DeleteObjects: 0.070300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Packages/com.unity.ide.rider/package.json
+  artifactKey: Guid(66c95bb3c74257f41bae2622511dc02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ide.rider/package.json using Guid(66c95bb3c74257f41bae2622511dc02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff96f7b61e94a0dc9b975679be81ead9') in 0.077494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.216876 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Materials
+  artifactKey: Guid(733415382638c1246a77dac58287e44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Materials using Guid(733415382638c1246a77dac58287e44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc5117a5c3e4c8ca30b499d2855d11e') in 0.007416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.845491 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Materials/Cars_Material.mat
+  artifactKey: Guid(b8ff3dbf2d1811b488591cfb25be7ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Materials/Cars_Material.mat using Guid(b8ff3dbf2d1811b488591cfb25be7ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8807d84e13c6912533a7009c06a39efb') in 0.538576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Materials/Front_Lights_Material.mat
+  artifactKey: Guid(8db262d26fcf2a94e88c9c276f6de722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Materials/Front_Lights_Material.mat using Guid(8db262d26fcf2a94e88c9c276f6de722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b6e1e4e701bf1af2a35a7f1597df86') in 0.117618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Materials/Rear_Lights_Material.mat
+  artifactKey: Guid(4a98cfae850de544680dc222604c30a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Materials/Rear_Lights_Material.mat using Guid(4a98cfae850de544680dc222604c30a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c4ab049e9366d4d867a460801f0b8fa') in 0.011461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.516794 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Meshes
+  artifactKey: Guid(1860a52d60f72a0459e8016c3a7f7134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Meshes using Guid(1860a52d60f72a0459e8016c3a7f7134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239127a5d54a904ae52c3c92c4422d36') in 0.007178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.301583 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs
+  artifactKey: Guid(24e2d3e15e9e26449b82eb76ceaff22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs using Guid(24e2d3e15e9e26449b82eb76ceaff22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83c522a66aff07f8c4ae125a10d0919') in 0.006477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.777223 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs/RTI
+  artifactKey: Guid(a22597bc5b633f842a5d71f59001ad66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs/RTI using Guid(a22597bc5b633f842a5d71f59001ad66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cae5164c73e7d8ff539f0d6beabe437') in 0.007552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052037 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Blue.prefab
+  artifactKey: Guid(9d71ac273b96d3a4dad4d3d045e12374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Blue.prefab using Guid(9d71ac273b96d3a4dad4d3d045e12374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90d526607a5848d0917b63a8c7c6157') in 0.033269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Yellow.prefab
+  artifactKey: Guid(1e45980f21c0609498b024a56b2d836e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Yellow.prefab using Guid(1e45980f21c0609498b024a56b2d836e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40de46364a3e3a076367ed41924e398') in 0.015213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Midnight.prefab
+  artifactKey: Guid(c2122042d3617904387e81f77f9d136b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Midnight.prefab using Guid(c2122042d3617904387e81f77f9d136b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32fbd671af33b7554ec54d15122452c') in 0.013980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Gray.prefab
+  artifactKey: Guid(4451c7d9583da4941901eaa5cfaee8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Gray.prefab using Guid(4451c7d9583da4941901eaa5cfaee8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9e52dcfc92325402396006b5504bd4') in 0.013347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Red.prefab
+  artifactKey: Guid(9b0dd12705317ed4e97c9b8ec0575948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Red.prefab using Guid(9b0dd12705317ed4e97c9b8ec0575948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a683bbbcab8c0913e603bbd32069bf8') in 0.017478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Orange.prefab
+  artifactKey: Guid(103c636634d3cbb48b7ab43e78bc13b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs/RTI/RTI_Orange.prefab using Guid(103c636634d3cbb48b7ab43e78bc13b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e0ea8e3a98ef50d225c50f21e92272') in 0.013267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.700547 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Scenes/PostProcessing/Volume Profile.asset
+  artifactKey: Guid(0a5e6cbbba855264ca194d16a106b3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Scenes/PostProcessing/Volume Profile.asset using Guid(0a5e6cbbba855264ca194d16a106b3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a098abab9d9298b3a7e769fe17d130a') in 0.011598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.524029 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Textures/CarsTexture.png
+  artifactKey: Guid(e80876ed7487e494dbe8f11997b23d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Textures/CarsTexture.png using Guid(e80876ed7487e494dbe8f11997b23d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5628acad3d4fa5f64da63a914c20e518') in 0.046723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.602901 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Meshes/RTI
+  artifactKey: Guid(3352654478a52b147b0d538abde9d47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Meshes/RTI using Guid(3352654478a52b147b0d538abde9d47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80ca0284933ea0401ef14f6101af666') in 0.002832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.162248 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Blue.fbx
+  artifactKey: Guid(f15c0590c7e20ad428dbdd23d877ce10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Blue.fbx using Guid(f15c0590c7e20ad428dbdd23d877ce10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '018e4d1bfeb5dea18ffea25e2afd68e4') in 0.162250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Red.fbx
+  artifactKey: Guid(6dd1c8d4a2f0c874bb33f3540ba4feb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Red.fbx using Guid(6dd1c8d4a2f0c874bb33f3540ba4feb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86cf5ee3508c5833c022f3e6fabeba7') in 0.049037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Midnight.fbx
+  artifactKey: Guid(82f50dfbb40874548a3e15ae239efea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Midnight.fbx using Guid(82f50dfbb40874548a3e15ae239efea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc2db6b152e68d87d73b73fb8261346') in 0.041563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Orange.fbx
+  artifactKey: Guid(1a6f1e0dcbcf70d4e921cf31e369f71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Orange.fbx using Guid(1a6f1e0dcbcf70d4e921cf31e369f71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844ab3e1d77cae77c1411f4564c2d4c9') in 0.042156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Gray.fbx
+  artifactKey: Guid(080ea7e60bb386d4db9680f45dfedaa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Gray.fbx using Guid(080ea7e60bb386d4db9680f45dfedaa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e4db2a80372d6921f11e388b2d8f6d') in 0.049154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Yellow.fbx
+  artifactKey: Guid(96824538f1786ea438429bee9309e06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Meshes/RTI/RTI_Yellow.fbx using Guid(96824538f1786ea438429bee9309e06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc995845b1cba5b4bdae44cbf57ac87') in 0.041897 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003274 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Domain Reload Profiling:
+	ReloadAssembly (927ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (711ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (240ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (269ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1496 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.1 MB.
+System memory in use after: 71.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1984.
+Total: 2.516400 ms (FindLiveObjects: 0.121100 ms CreateObjectMapping: 0.045300 ms MarkObjects: 2.322800 ms  DeleteObjects: 0.026400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 850.523619 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Other/Plane.mat
+  artifactKey: Guid(c6e08c415e470bc428a4be02a1f28667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Other/Plane.mat using Guid(c6e08c415e470bc428a4be02a1f28667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06b939183f05f795925dc1e4853cbab') in 0.117789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.818570 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Blue.prefab
+  artifactKey: Guid(7a42f04f0e6ded14595c6561c9ab7b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Blue.prefab using Guid(7a42f04f0e6ded14595c6561c9ab7b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae0de0dd25ce4af58f818570069c2a3') in 0.023414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Yellow.prefab
+  artifactKey: Guid(600b8da8d44237a41becf68bd8d5f1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Yellow.prefab using Guid(600b8da8d44237a41becf68bd8d5f1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e81ded86897f6c1369ad58c81373df') in 0.013794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Orange.prefab
+  artifactKey: Guid(d01ef4bf82568c24283be04fd39b8d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Orange.prefab using Guid(d01ef4bf82568c24283be04fd39b8d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5dd212868d54351c86d093cc5eb3f81') in 0.018012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Red.prefab
+  artifactKey: Guid(2c4ee3411ce870140b341033dc45f124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Red.prefab using Guid(2c4ee3411ce870140b341033dc45f124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70583835af566d684c17f5c7f8d54f25') in 0.016126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Midnight.prefab
+  artifactKey: Guid(afa91be8fdec119408c72da86109e6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Midnight.prefab using Guid(afa91be8fdec119408c72da86109e6d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9b3da4dafd2eabbca43ef1e4acb8b0') in 0.018994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Gray.prefab
+  artifactKey: Guid(d5147b9cadc415f41a117cb24eada08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI/RTI_Gray.prefab using Guid(d5147b9cadc415f41a117cb24eada08a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac00e908f6b681a78fb1f3a621e82f75') in 0.017849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.912220 seconds.
+  path: Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI
+  artifactKey: Guid(cab26ee991706f243a585c4e87c900e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/STYLIZED - FREE Drift Car/Prefabs (Colliders)/RTI using Guid(cab26ee991706f243a585c4e87c900e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9957a86495486c6911e80c552ee3d12') in 0.003074 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004249 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.223 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1224ms)
+		BeginReloadAssembly (179ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (959ms)
+			LoadAssemblies (159ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (332ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (389ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1496 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.2 MB.
+System memory in use after: 71.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1987.
+Total: 4.509400 ms (FindLiveObjects: 0.136900 ms CreateObjectMapping: 0.064500 ms MarkObjects: 4.284600 ms  DeleteObjects: 0.022500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003028 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.945 seconds
+Domain Reload Profiling:
+	ReloadAssembly (945ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (736ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (178ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1496 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.2 MB.
+System memory in use after: 71.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1989.
+Total: 2.627100 ms (FindLiveObjects: 0.147900 ms CreateObjectMapping: 0.046300 ms MarkObjects: 2.399100 ms  DeleteObjects: 0.033100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
