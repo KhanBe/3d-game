@@ -4,8 +4,9 @@ This project is 3D moblie game
 
 ### 3D 쿼터뷰 모바일 게임
 
-
-### 일지
+<details>
+  <summary>**일지**</summary>
+  
 #### 2022-03-10   
 - 캐릭터 구현
 - 캐릭터 움직임   
@@ -22,3 +23,5 @@ This project is 3D moblie game
 ```rb.angularVelocity = Vector3.zero;```
 
 - 다시 박스콜라이더로 교체   
+
+  </details>
