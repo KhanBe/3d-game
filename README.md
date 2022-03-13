@@ -20,3 +20,5 @@ This project is 3D moblie game
 - 원인 : 외부 충돌에 의해 **회전속력**이 발생
 - 해결 : FixedUpdate에 회전속력 값을 zero로 만들어준다.   
 ```rb.angularVelocity = Vector3.zero;```   
+
+- 다시 박스콜라이더로 교체   
