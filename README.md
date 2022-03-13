@@ -5,7 +5,7 @@ This project is 3D moblie game
 ### 3D 쿼터뷰 모바일 게임
 
 <details>
-  **<summary>일지</summary>**
+  <summary>일지</summary>
   
 #### 2022-03-10   
 - 캐릭터 구현
