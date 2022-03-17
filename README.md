@@ -24,4 +24,7 @@ This project is 3D moblie game
 
 - 다시 박스콜라이더로 교체   
 
+#### 2022-03-16
+- UI panel 연습, 
+  
   </details>
