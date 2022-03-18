@@ -25,6 +25,11 @@ This project is 3D moblie game
 - 다시 박스콜라이더로 교체   
 
 #### 2022-03-16
-- UI panel 연습, 
+- UI panel 연습, 구현
+  
+#### 2022-03-18
+- UI 서버 접속 버튼 구현
+- Photon 서버 스크립트 작성 (Connect, Disconnect, Join, Create)
+- 3D 캐릭터 위에 닉네임 표시 구현 https://itadventure.tistory.com/401?category=862463 참조
   
   </details>
