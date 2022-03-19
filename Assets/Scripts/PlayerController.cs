@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
 {
 
     public float movementSpeed = 3;
@@ -16,6 +18,11 @@ public class PlayerController : MonoBehaviour
     float moveVertical;
 
     Vector3 movement;
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) //변수 동기화 함수
+    {
+        
+    }
 
     void Start()
     {
