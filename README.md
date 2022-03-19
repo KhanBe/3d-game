@@ -40,7 +40,7 @@ Photon View의 Observed Components에 Photon animator View, Photon rigidbody Vie
 Photon animator View 추가 후, 파라미터 모두 Discrete 한다.   
 Photon rigidbody View 추가
   
-플레이어 스크립트가 MonoBehaviourPunCallbacks, IPunObservable 를 상속받는다.
+플레이어 스크립트가 MonoBehaviourPunCallbacks, IPunObservable 를 상속받는다.   
 ```public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)``` 이 함수 안에서 변수 동기화가 일어난다.
   
   </details>
