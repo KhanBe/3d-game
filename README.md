@@ -2,7 +2,7 @@
 This project is 3D moblie game
 
 
-### 3D 쿼터뷰 모바일 게임
+### 3D 쿼터뷰 게임
 
 <details>
   <summary>일지</summary>
@@ -33,7 +33,7 @@ This project is 3D moblie game
 - 3D 캐릭터 위에 닉네임 표시 구현
   https://itadventure.tistory.com/401?category=862463 참조
   
-#### 2022-13-19
+#### 2022-03-19
 - 플레이어 동기화 컴포넌트   
 기본적으로 Photon View 컴포넌트가 있어야한다.
 Photon View의 Observed Components에 Photon animator View, Photon rigidbody View, 플레이어 스크리트가 있어야된다.   
@@ -42,5 +42,8 @@ Photon rigidbody View 추가
   
 플레이어 스크립트가 MonoBehaviourPunCallbacks, IPunObservable 를 상속받는다.   
 ```public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)``` 이 함수 안에서 변수 동기화가 일어난다.
+  
+#### 2022-03-22
+- 프리팹 내부오브젝트는 인스펙터에 가져다 쓸 수 있는데, 외부오브젝트는 쓸 수 없어서 none으로 초기화 된다.
   
   </details>
