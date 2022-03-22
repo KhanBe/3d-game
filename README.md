@@ -1,5 +1,5 @@
 # 3d-moblie-game
-This project is 3D moblie game
+This project is 3D game
 
 
 ### 3D 쿼터뷰 게임
@@ -45,5 +45,9 @@ Photon rigidbody View 추가
   
 #### 2022-03-22
 - 프리팹 내부오브젝트는 인스펙터에 가져다 쓸 수 있는데, 외부오브젝트는 쓸 수 없어서 none으로 초기화 된다.
+캐릭터와 카메라가 같이 묶여 있어야 할 것 같다.   
+  
+#### 2022-03-23
+- 캐릭터 이름을 text 대신 text mesh를 사용했는데 서버 접속시 이름 적용이 안된다.
   
   </details>
