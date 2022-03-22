@@ -29,11 +29,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom() // 방 참가시 작동 함수
     {
         DisconnectPanel.SetActive(false);
+        Spawn();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && PhotonNetwork.IsConnected) PhotonNetwork.Disconnect();
+    }
+
+    public void Spawn()
+    {
+        PhotonNetwork.Instantiate("Penguin", Vector3.zero, Quaternion.identity);
+        RespawnPanel.SetActive(false);
     }
 
     public override void OnDisconnected(DisconnectCause cause)

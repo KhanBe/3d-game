@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
 {
@@ -11,13 +12,23 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
     public float jumpForce = 300;
     public float timeBeforeNextJump = 1.2f;
     private float canJump = 0f;
+
     Animator anim;
     Rigidbody rb;
+    public PhotonView pv;
+    public Text NickNameText;
+    Vector3 curPos;
 
     float moveHorizontal;
     float moveVertical;
 
     Vector3 movement;
+
+    void Awake()
+    {
+        NickNameText.text = pv.IsMine ? PhotonNetwork.NickName : pv.Owner.NickName;
+        NickNameText.color = pv.IsMine ? Color.green : Color.red;
+    }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) //변수 동기화 함수
     {
