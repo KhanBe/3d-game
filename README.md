@@ -50,4 +50,8 @@ Photon rigidbody View 추가
 #### 2022-03-23
 - 캐릭터 이름을 text 대신 text mesh를 사용했는데 서버 접속시 이름 적용이 안된다.
   
+#### 2022-03-30
+- 캐릭터 화면을 고정이 아닌 마우스로 회전할 수 있게 변경하려 한다.
+- CameraMovement Script 추가
+  
   </details>
