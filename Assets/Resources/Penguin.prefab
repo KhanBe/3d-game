@@ -81,7 +81,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879064808}
-  m_Text: NickName
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -649,7 +649,7 @@ TextMesh:
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 64
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 0}
   m_Color:
@@ -667,4 +667,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8ce507274ff6f4fa3fb64dc8c9f954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 0}

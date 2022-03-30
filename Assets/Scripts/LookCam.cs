@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class LookCam : MonoBehaviour
 {
-    public GameObject Cam;
+    private Camera MainCamera;
 
+    void Start()
+    {
+        MainCamera = Camera.main;
+    }
     void Update()
     {
-        transform.rotation = Cam.transform.rotation;
+        transform.rotation = MainCamera.transform.rotation;
     }
 }
