@@ -10,6 +10,7 @@ This project is 3D game
 #### 2022-03-10   
 - 캐릭터 구현
 - 캐릭터 움직임   
+- 캐릭터 script (내용 작성)
 
 #### 2022-03-11   
 - 맵
@@ -52,6 +53,10 @@ Photon rigidbody View 추가
   
 #### 2022-03-30
 - 캐릭터 화면을 고정이 아닌 마우스로 회전할 수 있게 변경하려 한다.
-- CameraMovement Script 추가
+- CameraMovement Script 추가 (내용 작성하기)
+  
+#### 2022-03-31
+- 마우스로 카메라 시점 변환 구현
+- 카메라 시점 변경시 캐릭터는 항상 (wasd) 움직이는 방향이 같다. 이점을 바꿔주면 될것.
   
   </details>
