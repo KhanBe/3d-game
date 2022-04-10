@@ -63,4 +63,7 @@ Photon rigidbody View 추가
 - (wasd) 움직임 방향 기준을 카메라로 잡긴 했으나 Charactor ctroller로 움직임을 구현시 중력 작용을 안한다.
 - 다음번에 Charactor ctroller 대신 다른 방법으로 접근할 예정이다.
   
+#### 2022-04-10
+- 앞으로 갈 때는 정상적이고 옆,뒤 입력시 캐릭터가 엄청난 회전을 함.
+  
   </details>
