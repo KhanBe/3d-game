@@ -12,9 +12,9 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
     public float jumpForce = 300;
     public float timeBeforeNextJump = 1.2f;
     private float canJump = 0f;
+    private Transform cameraTransform;
 
     Camera _camera;
-    CharacterController _controller;
     Animator anim;
     Rigidbody rb;
 
@@ -45,8 +45,9 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        _camera = Camera.main;  //쓰고싶으면 mainCamera 태크 활성 해야됨 (default)
-        _controller = GetComponent<CharacterController>();
+        cameraTransform = GetComponent<Transform>();
+
+        _camera = Camera.main;  //쓰고싶으면 mainCamera 태그 활성 해야됨 (default)
     }
 
     void Update()
@@ -77,22 +78,34 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
 
     void ControllPlayer()// 플레이어 조종 함수
     {
-        moveHorizontal = Input.GetAxisRaw("Horizontal");
-        moveVertical = Input.GetAxisRaw("Vertical");
+        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        //moveHorizontal = Input.GetAxisRaw("Horizontal"); // GetAxisRaw() axis 값을 정수로 받기 때문에 입력을 직관적으로 받아들일 수 있다
+        //moveVertical = Input.GetAxisRaw("Vertical");
 
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        Vector3 right = transform.TransformDirection(Vector3.right);
+        //Vector3 forward = transform.TransformDirection(Vector3.forward);
+        //Vector3 right = transform.TransformDirection(Vector3.right);
 
-        //movement = new Vector3(moveHorizontal, 0.0f, moveVertical).normalized;
-        movement = forward * moveVertical + right * moveHorizontal;
-        _controller.Move(movement.normalized * 5f *Time.deltaTime);
+        //movement = new Vector3(moveHorizontal, 0, moveVertical).normalized; // normalized 방향값을 1로 보정
+        //movement = forward * moveVertical + right * moveHorizontal;
 
-        if (movement == Vector3.zero)
+
+
+        Vector3 lookForward = new Vector3(cameraTransform.forward.x, 0f, cameraTransform.forward.z).normalized;
+        Vector3 lookRight = new Vector3(cameraTransform.right.x, 0f, cameraTransform.right.z).normalized;
+        Vector3 moveDir = lookForward * moveInput.y + lookRight * moveInput.x;
+
+        transform.position += moveDir * Time.deltaTime * 5f;
+
+
+
+
+
+        if (moveDir == Vector3.zero)
         {
             anim.SetInteger("Walk", 0);
         }
         else {
-            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);// 몸체 회전
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);// 몸체 회전
             anim.SetInteger("Walk", 1);
         }
 
