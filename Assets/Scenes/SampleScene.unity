@@ -1297,6 +1297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterBody: {fileID: 1222235204}
   cameraArm: {fileID: 554866515}
+  jumpForce: 300
+  timeBeforeNextJump: 1.2
 --- !u!4 &1251734516
 Transform:
   m_ObjectHideFlags: 0
@@ -1916,6 +1918,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 54786317403076396, guid: 2884e6b071e1c2a4faef2e7fd67b481e, type: 3}
       propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114046883305083430, guid: 2884e6b071e1c2a4faef2e7fd67b481e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
