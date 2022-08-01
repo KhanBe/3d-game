@@ -10,7 +10,8 @@ public class TPSCharacterController : MonoBehaviour
     private Transform cameraArm;
 
     Animator anim;
-    Rigidbody rb;
+    [SerializeField]
+    private Rigidbody rb;
 
     private float canJump = 0f;
     public float jumpForce = 300;
@@ -19,7 +20,6 @@ public class TPSCharacterController : MonoBehaviour
     void Start()
     {
         anim = characterBody.GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -53,6 +53,8 @@ public class TPSCharacterController : MonoBehaviour
         {
             rb.AddForce(0, jumpForce, 0);
             canJump = Time.time + timeBeforeNextJump;
+
+            //레이캐스트를 이용해 바닥에 닿으면 모션 취소하고 timeBeforeNextJump변수를 바꿔줘야할듯
             anim.SetTrigger("jump");
         }
     }
@@ -65,6 +67,7 @@ public class TPSCharacterController : MonoBehaviour
         float x = camAngle.x - mouseDelta.y;
 
         //위로회전 제한
+        // 각을 0 부터 안하고 -1f로 부터 제한하는 이유는 수평면 아래로 안내려가서 답답함
         if (x < 180f) x = Mathf.Clamp(x, -1f, 70f);
         //아래회전 제한
         else x = Mathf.Clamp(x, 335f, 361f);

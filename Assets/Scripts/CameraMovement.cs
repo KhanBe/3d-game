@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour
     public Transform objectfollow; // 따라갈 오브젝트 정보
     public float followSpeed = 10f; // 따라가는 속도
     public float sensitivity = 500f; //감도
-    public float clampAngle = 70f; // 제한 각도
+    public float clampAngle = 100f; // 제한 각도  
 
     private float rotX; // 마우스 정보
     private float rotY;
@@ -20,7 +20,6 @@ public class CameraMovement : MonoBehaviour
     public float finalDistance;
     public float smoothness = 10f;
 
-    // Start is called before the first frame update
     void Start()
     {
         rotX = transform.localRotation.eulerAngles.x;
@@ -38,11 +37,14 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // deltaTime = 마지막 프레임에서 현재 프레임까지의 간격 시간
+        // deltaTime = 마지막 프레임에서 현재 프레임까지의 시간 간격
+        // X회전을 'Mouse Y'로 회전하는것은 x축 원통을 돌리니까 서로다르게 설정한다.
         rotX += -(Input.GetAxis("Mouse Y")) * sensitivity * Time.deltaTime;
         rotY += Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
 
+        // 제한 각도 설정
         rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
+
         Quaternion rot = Quaternion.Euler(rotX, rotY, 0);
         transform.rotation = rot;
     }
@@ -56,6 +58,7 @@ public class CameraMovement : MonoBehaviour
 
         RaycastHit hit;
 
+        //플레이어와 카메라 사이 다른 오브젝트가 있는지 Linecast로 확인
         if (Physics.Linecast(transform.position, finalDir, out hit))
         {
             finalDistance = Mathf.Clamp(hit.distance, minDistance, maxDistance);
