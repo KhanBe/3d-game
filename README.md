@@ -76,7 +76,7 @@ Photon rigidbody View 추가
 #### 2022-08-01
 - 캐릭터 및 카메라 움직임
 - https://www.youtube.com/watch?v=P4qyRyQdySw
-- 캐릭터가 오르막길을 올라가면 카메라와 플레이어의 거리값이 변하는 문제.
+- 캐릭터가 오르막길을 올라가면 카메라와 플레이어의 거리값이 변하는 문제. (해결 : cameraArm의 position과 character의 position을 맞춰줌)
 - 캐릭터 점프가 연속으로 잘되지 않는 문제.
 
   </details>
