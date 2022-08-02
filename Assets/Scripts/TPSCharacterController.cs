@@ -26,6 +26,7 @@ public class TPSCharacterController : MonoBehaviour
     {
         LookAround();
         Move();
+        follow();
     }
 
     void Move()
@@ -73,5 +74,10 @@ public class TPSCharacterController : MonoBehaviour
         else x = Mathf.Clamp(x, 335f, 361f);
 
         cameraArm.rotation = Quaternion.Euler(x, camAngle.y + mouseDelta.x, camAngle.z);
+    }
+    
+    void follow()//캐릭터점프나 y축이동시 카메라가 y축을 따라가지 못하는 현상 해결;
+    {
+        cameraArm.transform.position = characterBody.transform.position;
     }
 }
