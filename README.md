@@ -85,6 +85,7 @@ Photon rigidbody View 추가
 #### 2022-08-04
 - 캐릭터 점프구현방식 변경
 - 캐릭터 점프가 연속으로 잘되지 않는 문제 해결 onCollisionEnter함수를 사용
+
   <details>
   <summary>해결방법</summary>
     
@@ -96,6 +97,7 @@ Photon rigidbody View 추가
     
   - static public 변수 사용으로 외부 스크립트 변수 수정
     </details>
+
 - gravity 10 감소
 - 점프 크기는 스크립트에서 바꿔도 Inspector에서 값을 담고있어서 바뀌지 않는다. (시간 소요..)
   </details>
