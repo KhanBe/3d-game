@@ -87,10 +87,10 @@ Photon rigidbody View 추가
 - 캐릭터 점프가 연속으로 잘되지 않는 문제 해결 onCollisionEnter함수를 사용
   <details>
   <summary>해결방법</summary>
-  - onCollision 함수가 자신의 오브젝트 기준으로 다른 tag오브젝트에 닿을 때 사용가능 함.   
-  - 내가 원하는 것은 player와 Ground가 닿을 때   
-  - 하지만 (character)오브젝트에 스크립트가 담겨있어서 player에 새 스크립트(JumpControll)을 넣어 onCollisionEnter함수 사용   
-  - static public 변수 사용으로 외부 스크립트 변수 수정   
+  - onCollision 함수가 자신의 오브젝트 기준으로 다른 tag오브젝트에 닿을 때 사용가능 함.  
+  - 내가 원하는 것은 player와 Ground가 닿을 때  
+  - 하지만 (character)오브젝트에 스크립트가 담겨있어서 player에 새 스크립트(JumpControll)을 넣어 onCollisionEnter함수 사용  
+  - static public 변수 사용으로 외부 스크립트 변수 수정  
      </details>
 - gravity 10 감소
 - 점프 크기는 스크립트에서 바꿔도 Inspector에서 값을 담고있어서 바뀌지 않는다. (시간 소요..)
