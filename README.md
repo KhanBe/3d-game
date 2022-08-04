@@ -96,7 +96,7 @@ Photon rigidbody View 추가
     - 하지만 (character)오브젝트에 스크립트가 담겨있어서 player에 새 스크립트(JumpControll)을 넣어 onCollisionEnter함수 사용
     
     - static public 변수 사용으로 외부 스크립트 변수 수정
-    </details>
+  </details>
 
 - gravity 10 감소
 - 점프 크기는 스크립트에서 바꿔도 Inspector에서 값을 담고있어서 바뀌지 않는다. (시간 소요..)
