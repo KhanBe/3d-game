@@ -100,4 +100,7 @@ Photon rigidbody View 추가
 
 - gravity 10 감소
 - 점프 크기는 스크립트에서 바꿔도 Inspector에서 값을 담고있어서 바뀌지 않는다. (시간 소요..)
+
+#### 2022-08-06
+- 캐릭터 선택창 구현 
   </details>
