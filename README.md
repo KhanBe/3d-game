@@ -71,12 +71,36 @@ Photon rigidbody View 추가
   
 #### 2022-06-08
 - 플레이어 움직임 재구현
-- 부모오브젝트의 rigidbody가 없어서 점프할 방법을 찾아야함. (해결)
+- 부모오브젝트의 rigidbody가 없어서 점프할 방법을 찾아야함. > 해결
   
 #### 2022-08-01
 - 캐릭터 및 카메라 움직임
 - https://www.youtube.com/watch?v=P4qyRyQdySw
-- 캐릭터가 오르막길을 올라가면 카메라와 플레이어의 거리값이 변하는 문제.
-- 캐릭터 점프가 연속으로 잘되지 않는 문제.
+- 캐릭터가 오르막길을 올라가면 카메라와 플레이어의 거리값이 변하는 문제. > 해결
+- 캐릭터 점프가 연속으로 잘되지 않는 문제. > 해결
 
+#### 2022-08-02
+- 캐릭터가 오르막길을 올라가면 카메라와 플레이어의 거리값이 변하는 문제 해결 : cameraArm의 position과 character의 position을 맞춰줌
+
+#### 2022-08-04
+- 캐릭터 점프구현방식 변경
+- 캐릭터 점프가 연속으로 잘되지 않는 문제 해결 onCollisionEnter함수를 사용
+
+<details>
+  <summary>해결방법</summary>
+    
+    - onCollision 함수가 자신의 오브젝트 기준으로 다른 tag오브젝트에 닿을 때 사용가능 함.
+    
+    - 내가 원하는 것은 player와 Ground가 닿을 때
+    
+    - 하지만 (character)오브젝트에 스크립트가 담겨있어서 player에 새 스크립트(JumpControll)을 넣어 onCollisionEnter함수 사용
+    
+    - static public 변수 사용으로 외부 스크립트 변수 수정
+  </details>
+
+- gravity 10 감소
+- 점프 크기는 스크립트에서 바꿔도 Inspector에서 값을 담고있어서 바뀌지 않는다. (시간 소요..)
+
+#### 2022-08-06
+- 캐릭터 선택창 구현 
   </details>
