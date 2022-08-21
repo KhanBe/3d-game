@@ -8,18 +8,24 @@ public class TPSCharacterController : MonoBehaviour
     private Transform characterBody;
     [SerializeField]
     private Transform cameraArm;
-
-    Animator anim;
     [SerializeField]
     private Rigidbody rb;
 
-    private float canJump = 0f;
-    public float jumpForce = 300;
+    Animator anim;
+
+    private BoxCollider characterCollider;
+
+    //안쓰는 점프 방식 private float canJump = 0f;
+    public float jumpForce = 300f;
     public float timeBeforeNextJump = 1.2f;
+
+    static public bool isJumping = false;
 
     void Start()
     {
         anim = characterBody.GetComponent<Animator>();
+        rb = characterBody.GetComponent<Rigidbody>();
+        characterCollider = characterBody.GetComponent<BoxCollider>();
     }
 
     void Update()
@@ -50,14 +56,22 @@ public class TPSCharacterController : MonoBehaviour
         //Debug.DrawRay(cameraArm.position, cameraArm.forward, Color.red);
         //Debug.DrawRay(cameraArm.position, new Vector3(cameraArm.forward.x, 0f, cameraArm.forward.z).normalized, Color.red);
 
-        if (Input.GetButtonDown("Jump") && Time.time > canJump)
+        if (Input.GetButtonDown("Jump") && !isJumping)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isJumping = true;
+            anim.SetTrigger("jump");
+        }
+
+        //기존 점프 방식
+        /*if (Input.GetButtonDown("Jump") && Time.time > canJump)
         {
             rb.AddForce(0, jumpForce, 0);
             canJump = Time.time + timeBeforeNextJump;
 
             //레이캐스트를 이용해 바닥에 닿으면 모션 취소하고 timeBeforeNextJump변수를 바꿔줘야할듯
             anim.SetTrigger("jump");
-        }
+        }*/
     }
 
     void LookAround()//마우스로 카메라 회전하는 함수
